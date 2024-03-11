@@ -1,0 +1,11 @@
+<section id="hero">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row ">
+                <div class="col text-center" style="filter: drop-shadow(5px 0px 10px rgb(122, 16, 16));">
+                    <p class="fw-bold fst-italic text-white" style="font-size: 5rem;">INDAH CAFFE</p>
+                    <p class="fst-italic fw-medium fs-5 text-white">Temukan Ketenangan Hidup Sejati dengan Secangkir
+                        kopi</p>
+                </div>
+            </div>
+        </div>
+    </section>
