@@ -9,26 +9,37 @@ let logoCoffe = document.getElementById("logo-coffe");
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
+  console.log(value);
 
-  text.style.opacity = -value * 0.5 + 100 + "%";
-  text.style.marginTop = value * -0.05 + "rem";
+  if (value <= 300) {
+    text.style.opacity = -value * 0.5 + 100 + "%";
+    text.style.marginTop = value * -0.05 + "rem";
 
-  daunBottomLeft.style.opacity = -value * 0.5 + 100 + "%";
-  daunBottomLeft.style.left = value * -0.05 + "%";
+    daunBottomLeft.style.opacity = -value * 0.5 + 100 + "%";
+    daunBottomLeft.style.left = value * -0.05 + "%";
 
-  daunTopLeft.style.opacity = -value * 0.5 + 100 + "%";
-  daunTopLeft.style.left = value * -0.05 + "%";
+    daunTopLeft.style.opacity = -value * 0.5 + 100 + "%";
+    daunTopLeft.style.left = value * -0.05 + "%";
 
-  daunMidRight.style.opacity = -value * 0.5 + 100 + "%";
-  daunMidRight.style.right = value * -0.05 + "%";
+    daunMidRight.style.opacity = -value * 0.5 + 100 + "%";
+    daunMidRight.style.right = value * -0.05 + "%";
 
-  coffe.style.opacity = -value * 0.5 + 100 + "%";
-  coffe.style.right = -value * 0.1 + 5 + "%";
+    coffe.style.opacity = -value * 0.5 + 100 + "%";
+    coffe.style.right = -value * 0.1 + 5 + "%";
 
-  bijiKopi.style.opacity = -value * 0.5 + 100 + "%";
-  bijiKopi.style.top = -value * 0.1 + 30 + "%";
+    bijiKopi.style.opacity = -value * 0.5 + 100 + "%";
+    bijiKopi.style.top = -value * 0.1 + 30 + "%";
 
-  bijiKopiShadow.style.opacity = -value * 1 + 80 + "%";
-  logoCoffe.style.left = value * -0.05 + 10 + "%";
-  logoCoffe.style.opacity = -value * 0.5 + 100 + "%";
+    bijiKopiShadow.style.opacity = -value * 1 + 80 + "%";
+    logoCoffe.style.left = value * -0.05 + 10 + "%";
+    logoCoffe.style.opacity = -value * 0.5 + 100 + "%";
+  }
+
+  if (value > 300) {
+    daunBottomLeft.style.left = 2 + "%";
+    daunTopLeft.style.left = 2 + "%";
+    daunMidRight.style.right = 5 + "%";
+    coffe.style.right = 2 + "%";
+    logoCoffe.style.left = 5 + "%";
+  }
 });
