@@ -221,6 +221,7 @@
 }
 
 
+
 #kontak{
     width: 100%;
     height: 110vh;
@@ -282,8 +283,41 @@
     font-weight: 300;
 }
 
-.footer{
+#testimoni{
+    position: relative;
+    width: 100%;
+    height: 110vh;
     background-color: #353535;
+    background-size: cover;
+}
+
+#testimoni h2{
+    padding-top: 4rem;
+}
+
+.card-testimoni{
+    filter: drop-shadow(3px 3px 10px rgb(26, 25, 25));
+}
+
+
+.card-isi-testimoni{
+    height: 40vh;
+    width: 100%;
+    color: #ffffff;
+    transition: 0.4s ease;
+    background-color: black;
+}
+
+.card-isi-testimoni:hover{
+    height: 40vh;
+    width: 100%;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+}
+
+.footer{
+    background-color: #230031;
     color: white;
     padding-top: 5rem;
     text-align: center;
