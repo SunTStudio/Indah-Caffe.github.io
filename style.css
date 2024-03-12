@@ -400,8 +400,8 @@
 }
 
 #kategori-menu #popUpMenuKopi{
-    width: 8rem; 
-    height: 6rem; 
+    width: 7rem; 
+    height: 5.5rem; 
     position: absolute; 
     top: 30%; left: 8%;
     transform: rotateX(10deg);
